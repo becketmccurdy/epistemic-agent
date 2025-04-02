@@ -1,0 +1,123 @@
+services:
+  - type: web
+    name: simulate-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/simulate_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+
+services:
+  - type: web
+    name: model-switch-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/model_switch_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: mirror-reasoning-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/mirror_reasoning_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: build-toolchain-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/build_toolchain_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: epistemic-audit-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/epistemic_audit_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: generate-analogy-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/generate_analogy_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: hypothetical-switch-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/hypothetical_switch_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: ladder-of-belief-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/ladder_of_belief_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: mirror-reasoning-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/mirror_reasoning_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: model-switch-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/model_switch_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+services:
+  - type: web
+    name: spot-contradiction-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python actions/spot_contradiction_api.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+  # Repeat for other services
+
+
+
+
